@@ -1,0 +1,34 @@
+# Particle Detector Telescope Simulation
+
+This project simulates a simplified **particle detector telescope**. It models the **multiple scattering** of particles through various layers, and incorporates **systematic detector effects** such as spatial resolution smearing. The project also includes:
+
+- **Visualizations** of the particle tracks and detector layers
+- **Residual analysis** with histogram fitting
+- A simple **web interface** to run simulations and view results (in progress)
+
+---
+
+## 📊 Features
+
+- Generate Monte Carlo particle tracks
+- Simulate detector layer effects (resolution, material)
+- Fit reconstructed hits with a straight-line model
+- Produce residual histograms and fit them with a Gaussian
+- Launch a local Flask web app to view:
+  - Track visualization
+  - Residual distribution with fit
+
+---
+
+## 🚀 How to Run
+
+### 1. Install Requirements
+Make sure you have Python 3.8+ and install required packages:
+```bash
+pip install -r requirements.txt
+
+### 2. Run the simulation
+python src/main.py
+
+## References
+https://inspirehep.net/literature/2106994
